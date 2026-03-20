@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>English to LinkedIn Translator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <h1>English to LinkedIn Translator</h1>
+      <p>Turn ordinary moments into extraordinary professional journeys.</p>
+    </header>
+
+    <main class="translator-card">
+      <div class="language-row">
+        <div class="lang-box">
+          <span>English</span>
+        </div>
+
+        <button class="swap-btn" title="Swap (for fun only)">⇄</button>
+
+        <div class="lang-box">
+          <select id="modeSelect">
+            <option value="linkedin_cringe">LinkedIn Cringe</option>
+            <option value="ceo_mode">CEO Mode</option>
+            <option value="humble_brag">Humble Brag</option>
+            <option value="thought_leader">Thought Leader</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="text-panels">
+        <div class="panel">
+          <textarea id="inputText" placeholder="Type something simple... e.g. I fell from the stairs"></textarea>
+          <div class="panel-footer">
+            <span id="inputCount">0 / 1000</span>
+            <button id="clearBtn">Clear</button>
+          </div>
+        </div>
+
+        <div class="panel">
+          <textarea id="outputText" placeholder="Your LinkedIn masterpiece will appear here..." readonly></textarea>
+          <div class="panel-footer">
+            <span id="statusText">Ready</span>
+            <button id="copyBtn">Copy</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="action-row">
+        <button id="translateBtn" class="primary-btn">Translate</button>
+        <button id="worseBtn">Make it Worse</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

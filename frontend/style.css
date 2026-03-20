@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f8f9fa;
+  color: #202124;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.topbar {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.topbar h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.topbar p {
+  margin: 0;
+  color: #5f6368;
+}
+
+.translator-card {
+  background: #ffffff;
+  border: 1px solid #dadce0;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(60, 64, 67, 0.15);
+}
+
+.language-row {
+  display: grid;
+  grid-template-columns: 1fr 80px 1fr;
+  gap: 12px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.lang-box {
+  border: 1px solid #dadce0;
+  border-radius: 12px;
+  padding: 14px 16px;
+  background: #fff;
+  font-weight: 500;
+}
+
+.lang-box select {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: transparent;
+}
+
+.swap-btn {
+  height: 48px;
+  border: 1px solid #dadce0;
+  background: #fff;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.text-panels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.panel {
+  border: 1px solid #dadce0;
+  border-radius: 16px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 360px;
+}
+
+.panel textarea {
+  flex: 1;
+  border: none;
+  resize: none;
+  outline: none;
+  padding: 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+  border-radius: 16px 16px 0 0;
+}
+
+.panel-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  border-top: 1px solid #dadce0;
+  color: #5f6368;
+}
+
+.panel-footer button,
+.action-row button {
+  border: 1px solid #dadce0;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.action-row {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.primary-btn {
+  background: #1a73e8 !important;
+  color: #fff;
+  border: none !important;
+}
+
+button:hover {
+  opacity: 0.95;
+}
+
+@media (max-width: 900px) {
+  .text-panels {
+    grid-template-columns: 1fr;
+  }
+
+  .language-row {
+    grid-template-columns: 1fr;
+  }
+}
